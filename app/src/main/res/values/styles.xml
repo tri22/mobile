@@ -5,4 +5,10 @@
         <item name="windowNoTitle">true</item>
         <item name="android:windowActionBarOverlay">true</item> <!-- ẩn nền của tiêu đề -->
     </style>
+    <?xml version="1.0" encoding="utf-8"?>
+
+        <style name="ConstraintLayout">
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">match_parent</item>
+        </style>
 </resources>
