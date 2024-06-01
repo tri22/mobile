@@ -1,4 +1,4 @@
-package com.example.myapplication.Activity;
+package com.example.projectmobileapp.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,8 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.myapplication.R;
-import com.example.myapplication.databinding.ActivityLoginBinding;
+import com.example.projectmobileapp.R;
+import com.example.projectmobileapp.databinding.ActivityLoginBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;

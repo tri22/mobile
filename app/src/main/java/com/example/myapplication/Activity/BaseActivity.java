@@ -1,4 +1,4 @@
-package com.example.myapplication.Activity;
+package com.example.projectmobileapp.Activity;
 
 import android.os.Bundle;
 
@@ -7,7 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-import com.example.myapplication.R;
+
+import com.example.projectmobileapp.R;
 import com.google.firebase.Firebase;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
@@ -16,6 +17,7 @@ public class BaseActivity extends AppCompatActivity {
     FirebaseAuth mAuth;
     FirebaseDatabase database;
     public String TAG="uilover";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,4 +27,5 @@ public class BaseActivity extends AppCompatActivity {
 
         getWindow().setStatusBarColor(getResources().getColor(R.color.white));
     }
+
 }
