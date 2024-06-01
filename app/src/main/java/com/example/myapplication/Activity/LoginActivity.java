@@ -1,4 +1,4 @@
-package com.example.myapplication.Activity;
+package com.example.foodapp.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,8 +12,10 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.myapplication.R;
-import com.example.myapplication.databinding.ActivityLoginBinding;
+import com.example.foodapp.Activity.BaseActivity;
+import com.example.foodapp.Activity.MainActivity;
+import com.example.foodapp.R;
+import com.example.foodapp.databinding.ActivityLoginBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
