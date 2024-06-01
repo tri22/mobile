@@ -1,4 +1,4 @@
-package com.example.foodapp.Activity;
+package com.example.myapplication.Activity;
 
 import android.os.Bundle;
 import android.view.View;
@@ -11,10 +11,10 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.foodapp.Adapter.FoodListAdapter;
-import com.example.foodapp.Domain.Foods;
-import com.example.foodapp.R;
-import com.example.foodapp.databinding.ActivityListFoodsBinding;
+import com.example.myapplication.Adapter.FoodListAdapter;
+import com.example.myapplication.Domain.Foods;
+import com.example.myapplication.R;
+import com.example.myapplication.databinding.ActivityListFoodsBinding;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

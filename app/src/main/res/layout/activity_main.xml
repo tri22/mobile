@@ -79,11 +79,7 @@
                     android:orientation="horizontal">
 
                     <EditText
-<<<<<<< HEAD
-                        android:id="@+id/editTextText"
-=======
                         android:id="@+id/searchEdt"
->>>>>>> 39da786f793c48e51b52c17017448d51170eb55d
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_margin="4dp"
@@ -97,7 +93,6 @@
                         android:textColor="@color/blue_grey"
                         android:textColorHint="@color/blue_grey"
                         android:textSize="16sp" />
-
                     <ImageView
                         android:id="@+id/searchBtn"
                         android:layout_width="wrap_content"

@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+
+
 package com.example.myapplication.Adapter;
 
 import android.content.Context;
@@ -15,107 +16,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.CenterCrop;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
-import com.example.foodapp.Domain.Category;
-import com.example.foodapp.R;
-
-import java.util.ArrayList;
-
-public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.viewholder> {
-    ArrayList<Category> items;
-    Context context;
-
-    public CategoryAdapter(ArrayList<Category> items) {
-        this.items = items;
-    }
-    @NonNull
-    @Override
-    public viewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        context=parent.getContext();
-        View inflate = LayoutInflater.from(parent.getContext()).inflate(R.layout.viewholder_category,parent,false);
-        return new viewholder(inflate);
-    }
-
-    @Override
-    public void onBindViewHolder(@NonNull viewholder holder, int position) {
-        holder.titleTxt.setText(items.get(position).getName());
-        switch (position){
-            case 0:{
-                holder.pic.setBackgroundResource(R.drawable.cat_0_background);
-            }
-            case 1:{
-                holder.pic.setBackgroundResource(R.drawable.cat_1_background);
-            }
-            case 2:{
-                holder.pic.setBackgroundResource(R.drawable.cat_2_background);
-            }
-            case 3:{
-                holder.pic.setBackgroundResource(R.drawable.cat_3_background);
-            }
-            case 4:{
-                holder.pic.setBackgroundResource(R.drawable.cat_4_background);
-            }
-            case 5:{
-                holder.pic.setBackgroundResource(R.drawable.cat_5_background);
-            }
-            case 6:{
-                holder.pic.setBackgroundResource(R.drawable.cat_6_background);
-            }
-            case 7:{
-                holder.pic.setBackgroundResource(R.drawable.cat_7_background);
-            }
-        }
-        int drawableResourceId = context.getResources().getIdentifier(items.get(position).getImagePath()
-                , "drawable", holder.itemView.getContext().getPackageName());
-
-        Glide.with(context)
-                .load(drawableResourceId)
-                .transform(new CenterCrop(), new RoundedCorners(30))
-                .into(holder.pic);
-
-//        holder.itemView.setOnClickListener(v -> {
-//            Intent intent = new Intent(context, ListFoodsActivity.class);
-//            intent.putExtra("CategoryId", items.get(position).getId());
-//            intent.putExtra("CategoryName", items.get(position).getName());
-//            context.startActivity(intent);
-//        });
-    }
-
-    @Override
-    public int getItemCount() {
-        return items.size();
-    }
-
-    public class viewholder extends RecyclerView.ViewHolder {
-        TextView titleTxt;
-        ImageView pic;
-        public viewholder(@NonNull View itemView) {
-            super(itemView);
-            titleTxt=itemView.findViewById(R.id.catNameTxt);
-
-            pic=itemView.findViewById(R.id.imgCat);
-        }
-    }
-}
-=======
-package com.example.foodapp.Adapter;
-
-import android.content.Context;
-import android.content.Intent;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
-
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
-
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.resource.bitmap.CenterCrop;
-import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
-import com.example.foodapp.Activity.ListFoodsActivity;
-import com.example.foodapp.Domain.Category;
-import com.example.foodapp.R;
+import com.example.myapplication.Activity.ListFoodsActivity;
+import com.example.myapplication.Domain.Category;
+import com.example.myapplication.R;
 
 import java.util.ArrayList;
 
@@ -195,4 +98,4 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.viewho
         }
     }
 }
->>>>>>> 39da786f793c48e51b52c17017448d51170eb55d
+

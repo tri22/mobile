@@ -46,4 +46,6 @@ dependencies {
     implementation("com.google.code.gson:gson:2.9.1")
     implementation("com.google.firebase:firebase-auth:22.3.0")
     implementation ("com.google.android.material:material:1.9.0")
+    implementation ("com.github.bumptech.glide:glide:4.15.1") // Check for the latest version on Glide's GitHub page
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.15.1")
 }

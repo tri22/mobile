@@ -1,4 +1,4 @@
-package com.example.foodapp.Activity;
+package com.example.myapplication.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,17 +10,15 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.foodapp.Activity.BaseActivity;
-import com.example.foodapp.Activity.ListFoodsActivity;
-import com.example.foodapp.Adapter.BestFoodAdaper;
-import com.example.foodapp.Adapter.CategoryAdapter;
-import com.example.foodapp.Domain.Category;
-import com.example.foodapp.Domain.Foods;
-import com.example.foodapp.Domain.Location;
-import com.example.foodapp.Domain.Price;
-import com.example.foodapp.Domain.Time;
-import com.example.foodapp.R;
-import com.example.foodapp.databinding.ActivityMainBinding;
+import com.example.myapplication.Adapter.BestFoodAdaper;
+import com.example.myapplication.Adapter.CategoryAdapter;
+import com.example.myapplication.Domain.Category;
+import com.example.myapplication.Domain.Foods;
+import com.example.myapplication.Domain.Location;
+import com.example.myapplication.Domain.Price;
+import com.example.myapplication.Domain.Time;
+import com.example.myapplication.R;
+import com.example.myapplication.databinding.ActivityMainBinding;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;

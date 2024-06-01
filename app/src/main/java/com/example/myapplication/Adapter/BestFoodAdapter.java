@@ -13,8 +13,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.CenterCrop;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
-import com.example.foodapp.Domain.Foods;
-import com.example.foodapp.R;
+import com.example.myapplication.Domain.Foods;
+import com.example.myapplication.R;
 
 import java.util.ArrayList;
 
